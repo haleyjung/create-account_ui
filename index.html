@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Blueprint Clone 1: Create an Account</title>
   </head>
   <body>
@@ -11,7 +14,7 @@
       <header>Create an Account</header>
       <form action="#" method="get">
         <div>
-          <label for="first-name">Frist name</label>
+          <label for="first-name">First name</label>
           <input type="text" placeholder="First name" required>
         </div>
         <div>
@@ -34,26 +37,26 @@
           <label for="birthdate">Birth date</label>
           <input type="date" required>
         </div>
-        <div>
-          <label for="happy-range">How happy are you?</label>
-          <input type="range" list="happy-range" required>
-            <datalist>
-              <option value="0"></option>
-              <option value="10"></option>
-              <option value="20"></option>
-              <option value="30"></option>
-              <option value="40"></option>
-              <option value="50"></option>
-              <option value="60"></option>
-              <option value="70"></option>
-              <option value="80"></option>
-              <option value="90"></option>
-              <option value="100"></option>
+        <div class="happy-range__container">
+            <label for="happy-range">How happy are you?</label>
+            <input type="range" value="50" min="0" max="100" step="1" list="happy-range" required>
+            <datalist id="happy-range">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
             </datalist>
         </div>
         <div>
-          <label for="fav-color">What is your fav. color?</label>
-          <input type="color" required>
+          <label for="fav-color"">What is your fav. color?</label>
+          <input type="color" id="fav-color" name="favcolor" value="#ffffff" required>
         </div>
         <div>
           <input type="submit" value="Create Account">

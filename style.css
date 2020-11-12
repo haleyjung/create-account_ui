@@ -1,31 +1,77 @@
+
+
 * {
     margin: 0;
     padding: 0;
 } 
 
 body {
-  background: black;
-  position: 
+  background: darkturquoise;
+  font-family: 'Poppins', sans-serif;
 }
 
 #create-account {
-  width: 100%;
+  margin: 50px;
+  width: 300px;
   height: 100%;
   background-color: white;
   padding: 20px 20px;
-  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(255, 255, 0, .4);
 }
 
 #create-account header {
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 20px;
+  color: darkturquoise;
+  margin-bottom: 10px;
 }
 
-#create-account input {
-  margin: 5px 0px;
+#create-account label {
+  font-size: 15px;
+  color: darkturquoise;
+  padding-right: 5px;
+}
+
+#create-account input:not(#happy-range) {
+  margin: 8px 0px;
+  border: none;
+  border-bottom: 1px dashed darkturquoise;
+}
+
+#create-account input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  opacity: .5;
+  padding-left: 2px;
+}
+
+#create-account input[type="date"] {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: rgba(0, 0, 0, .4);
+  padding-left: 2px;
+}
+
+.happy-range__container{
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  
 }
 
 #create-account input[type="submit"] {
-  padding: 1px 6px;
+  background-color: rgba(255, 255, 0, 0.247);
+  color: cadetblue;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 4px 4px 4px rgba(157, 255, 0, 0.4);
+}
+
+#create-account input[type="submit"]:hover{
+  color: mediumspringgreen;
+  box-shadow: 2px 2px 2px rgba(157, 255, 0, 0.397);
+  cursor: pointer;
 }
